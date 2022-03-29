@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check List</title>
+    <style>
+        div {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+           
+        }
+        div > p {
+            margin: 0px;
+        }
+        #html {
+            background-image: linear-gradient(to right, #f18a02, #f8be01);
+        }
+        #dev {
+            background-image: linear-gradient(to right, #0099ff, #8200d8);
+        }
+        #port {
+            background-image: linear-gradient(to right, #01a532, #04da99);
+        }
+        #mat {
+            background-image: linear-gradient(to right, #da2ee0, #7d01c5);
+        }
+        #phot {
+            background-image: linear-gradient(to right, #a200ff, #cd76ff);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="html">
+        Html e Css3
+    </div>
+    <div id="dev">
+        DevWeb
+    </div>
+    <div id="port">
+        Português
+    </div>
+    <div id="mat">
+        Matemetica
+    </div>
+    <div id="phot">
+        Photoshop
+    </div>
+
+    <script>
+        
+            let html = document.getElementById('html')
+            html.addEventListener('click', clicar)
+            html.addEventListener('mouseover', hover)
+            html.addEventListener('mouseout', saiuh)
+
+            function clicar(){
+                html.innerHTML = 'CHECK'
+                html.style.background = 'black'
+            }
+
+            function hover() {
+                html.innerHTML = 'Continue'
+            }
+            function saiuh() {
+                html.innerHTML = 'Html e Css3'
+            }
+
+            let dev = document.getElementById('dev')
+            dev.addEventListener('click', clicou)
+            dev.addEventListener('mouseover', hove)
+            dev.addEventListener('mouseout', saiud)
+
+            function clicou(){
+                dev.innerHTML = 'CHECK'
+                dev.style.background = 'black'
+            }
+            function hove() {
+                dev.innerHTML = 'Continue'
+            }
+            function saiud() {
+                dev.innerHTML = 'DevWeb'
+            }
+
+            let port = document.getElementById('port')
+            port.addEventListener('click', clico)
+            port.addEventListener('mouseover', hov)
+            port.addEventListener('mouseout', saiup)
+
+            function clico(){
+                port.innerHTML = 'CHECK'
+                port.style.background = 'black'
+            }
+            function hov() {
+                port.innerHTML = 'Continue'
+            }
+            function saiup() {
+                port.innerHTML = 'Português'
+            }
+
+            let mat = document.getElementById('mat')
+            mat.addEventListener('click', clicom)
+            mat.addEventListener('mouseover', hoverm)
+            mat.addEventListener('mouseout', saium)
+
+            function clicom(){
+                mat.innerHTML = 'CHECK'
+                mat.style.background = 'black'
+            }
+            function hoverm() {
+                mat.innerHTML = 'Continue'
+            }
+            function saium() {
+                mat.innerHTML = 'Matemática'
+            }
+            
+            let phot = document.getElementById('phot')
+            phot.addEventListener('click', clicoph)
+            phot.addEventListener('mouseover', hoverph)
+            phot.addEventListener('mouseout', saiuph)
+
+            function clicoph(){
+                phot.innerHTML = 'CHECK'
+                phot.style.background = 'black'
+            }
+            function hoverph() {
+                phot.innerHTML = 'Continue'
+            }
+            function saiuph() {
+                phot.innerHTML = 'Matemática'
+            }
+
+    </script>
+</body>
+</html>
